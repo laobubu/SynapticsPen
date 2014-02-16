@@ -1,0 +1,234 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\SynapticsPen.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\SynapticsPen.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 237, 163
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 SynapticsPen"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,10,10,21,21
+    LTEXT           "SynapticsPen 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2014 laobubu",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+    EDITTEXT        IDC_TXTABOUT,5,40,225,115,ES_MULTILINE | ES_READONLY | 
+                    WS_VSCROLL
+END
+
+IDD_SYNAPTICSPEN_DIALOG DIALOGEX 0, 0, 110, 105
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "SynapticsPen"
+FONT 11, "宋体"
+BEGIN
+    EDITTEXT        IDC_TXTPOS,0,40,110,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_TABSTOP
+    CONTROL         "",IDC_PRESSURELOG,"Static",SS_BLACKFRAME,0,0,109,40
+    CONTROL         "启动",IDC_BTNSWITCH,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,0,90,55,15
+    PUSHBUTTON      "调整区域",IDC_BTNSIZER,55,90,55,15
+    GROUPBOX        "点击方式",IDC_STATIC,0,55,110,35
+    CONTROL         "一摸就点",IDC_CHKTOUCH,"Button",BS_AUTOCHECKBOX,5,65,55,
+                    10
+END
+
+IDD_SIZER DIALOG DISCARDABLE  0, 0, 134, 118
+STYLE WS_POPUP | WS_THICKFRAME
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "完成校对",IDC_BTNFINISHED,0,0,40,15
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "SynapticsPen\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "SynapticsPen\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2014 laobubu\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "SynapticsPen.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "SynapticsPen 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 230
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 156
+    END
+
+    IDD_SYNAPTICSPEN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 103
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 98
+    END
+
+    IDD_SIZER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 127
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 111
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 SynapticsPen(&A)..."
+    IDS_CANNOT_LOADAPI      "不能载入API。\n请确定是否已安装 Synaptics 的驱动程序。"
+    IDS_ABOUT               "此程序是 laobubu 的一个无聊实验程序，用来将笔记本电脑的触摸板变成绘图工具的软件。\n\n相关信息（包括某原创的入门级参考文档）可以在 http://laobubu.net 上找到\n\n邮箱：laobubu@gmail.com"
+    IDS_SIZER_TITLE         "区域校对"
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\SynapticsPen.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
